@@ -17,14 +17,14 @@ void InputDispatcher::dispatchInputEvents()
 			}
 		}
 
-		for (const auto& ir : m_InputRceivers)
+		for (const auto& ir : m_InputReceivers)
 		{
-			ir->addEvent(event);
+			ir->addEvent(*event);
 		}
 	}
 }
 
-void InputDispatcher::registerNewInputRceiver(InputRceiver* ir)
+void InputDispatcher::registerNewInputRceiver(InputReceiver* ir)
 {
-	m_InputRceivers.push_back(ir);
+	m_InputReceivers.push_back(ir);
 }

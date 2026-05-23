@@ -1,6 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include "InputRceiver.h"
+#include "InputReceiver.h"
 
 using namespace sf;
 
@@ -8,9 +8,9 @@ class InputDispatcher
 {
 private:
 	RenderWindow* m_Window;
-	vector <InputRceiver*> m_InputRceivers;
+	vector <InputReceiver*> m_InputReceivers;
 public:
 	InputDispatcher(RenderWindow* window);
 	void dispatchInputEvents();
-	void registerNewInputRceiver(InputRceiver* ir);
+	void registerNewInputRceiver(InputReceiver* ir);
 };
