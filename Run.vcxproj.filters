@@ -21,6 +21,9 @@
     <ClCompile Include="InputDispatcher.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="InputReceiver.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InputDispatcher.h">

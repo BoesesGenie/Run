@@ -5,7 +5,6 @@
 #include "Factory.h"
 #include "InputDispatcher.h"
 
-using namespace std;
 using namespace sf;
 
 int main()
@@ -13,7 +12,7 @@ int main()
 	RenderWindow window(VideoMode::getDesktopMode(), "Booster", sf::State::Fullscreen);
 	VertexArray canvas(PrimitiveType::Triangles, 6);
 	InputDispatcher inputDispatcher(&window);
-	vector<GameObject> gameObjects;
+	std::vector<GameObject> gameObjects;
 	Factory factory(&window);
 
 	factory.loadLevel(gameObjects, canvas, inputDispatcher);

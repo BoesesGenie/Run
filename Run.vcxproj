@@ -134,6 +134,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="InputDispatcher.cpp" />
+    <ClCompile Include="InputReceiver.cpp" />
     <ClCompile Include="Run.cpp" />
   </ItemGroup>
   <ItemGroup>
