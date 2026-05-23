@@ -13,7 +13,7 @@ Factory::Factory(RenderWindow* window)
 }
 
 void Factory::loadLevel(
-	std::vector<GameObject*>& gameObjects,
+	std::vector<GameObject>& gameObjects,
 	VertexArray& canvas,
 	InputDispatcher& inputDispatcher
 )

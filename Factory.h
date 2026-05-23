@@ -13,7 +13,7 @@ private:
 public:
 	Factory(RenderWindow* window);
 	void loadLevel(
-		std::vector<GameObject*>& gameObjects,
+		std::vector<GameObject>& gameObjects,
 		VertexArray& canvas,
 		InputDispatcher& inputDispatcher
 	);
